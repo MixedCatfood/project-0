@@ -1,0 +1,198 @@
+html {
+    width: 100%;
+    /*min-height: 100%;*/
+    min-width: 1300px;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #7c8184;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+* {
+    cursor: none;
+}
+
+*:has(a:hover) .cursor {
+    background-color: rgb(75, 9, 9);
+}
+
+
+.characterlink {
+    color: #7c8184;
+    text-decoration: none;
+}
+.player1Token {
+    width: 28px;
+    height: 28px;
+    border: 5px solid red;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    color: rgb(255, 142, 142);
+    font-size:larger;
+    text-align: center;
+    background-color: rgb(206, 45, 45); 
+    pointer-events: none;
+    
+}
+.playerCursor {
+    width: 28px;
+    height: 28px;
+    border: 5px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+.bannerlink {
+    background-color: rgb(32, 32, 32);
+    margin: 0px;
+    position: fixed;
+    color: rgb(185, 185, 185);
+    top: 0;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.character-select-top {
+    display: inline-block;
+    background-color: rgba(69, 71, 68, 0.705);
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+.rectangle1 {
+    width: 100%;
+    height: 250px;
+    background: rgba(158, 158, 158, 0.39);
+    position: relative;
+    left: 0;
+}
+
+.melee {
+    font-size: 70px;
+    font-family: Hussar;
+    font-style: italic;
+    letter-spacing: -7px;
+    padding: 0;
+    border: 0;
+    margin-bottom: 1px;
+    background-color: rgba(0, 0, 0, 0);
+    color:black;
+    width: 100px;
+    position: relative;
+    top: 80px;
+    right: 150px;
+}
+
+.vs {
+    font-size: 25px;
+    background-color:#1f2528;
+    border-style: solid;
+    border-color: #7c8184;
+    border-radius: 200px;
+    padding: 8px;
+    width: 28px;
+    text-align: center;
+    font-style: bold;
+    position: relative;
+    top: 65px;
+    right: 110px;
+}
+
+.game-type {
+    font-size: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.329) ;
+    width: 750px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #7c8184;
+    border-width: 7px;
+    position: relative;
+    top: 70px;
+    right: 50px;
+    word-spacing: 150%;
+}
+
+#info {
+    color: #f1e11a;
+    border-color: #f1e11a;
+    padding-top: 0px;
+    padding-right: 150px;
+    background-color:rgba(0, 0, 0, 0);
+    position: relative;
+    top: 70px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+li {
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    width: 119px;
+    margin: 0px;
+    background-color: black;
+    border-style: solid;
+    border-color: #7c8184;
+    border-radius: 5px;
+}
+
+.climbers {
+     text-align: left;
+     line-height: 90%;
+     position: relative;
+     top: 3px;
+}
+
+.puff {
+    line-height: 90%;
+    position: relative;
+    top: 3px;
+}
+
+.gamewatch {
+    line-height: 90%;
+    position: relative;
+    top: 3px;
+}
+
+.all-characters {
+    width: 100%;
+    margin: auto;
+    bottom: 25px;
+}
+
+.characters {
+    position: relative;
+    padding: 0;
+}
+
+.ch2 {  
+    bottom: 17px;
+}
+
+.ch3 {
+    bottom: 33px;
+}
