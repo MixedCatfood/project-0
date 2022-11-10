@@ -44,7 +44,7 @@ body {
     border: 5px solid red;
     border-radius: 50%;
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     color: rgb(255, 142, 142);
     font-size:larger;
     text-align: center;
@@ -58,7 +58,7 @@ body {
     border: 5px solid rgba(0, 0, 0, 0);
     border-radius: 50%;
     position: absolute;
-    z-index: 1;
+    z-index: 4;
     pointer-events: none;
 }
 .bannerlink {
@@ -195,4 +195,95 @@ li {
 
 .ch3 {
     bottom: 33px;
+}
+.player1characterportrait1 {
+    background-color: rgb(230, 61, 61);
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 3px;
+    border-color:#7c8184;
+    width: 250px;
+    height: 400px;
+    margin-left: 50px;
+}
+.playerorcpu {
+    position: relative;
+    border-style: solid;
+    border-width: 6px;
+    border-color:rgb(235, 173, 4);
+    width: 75px;
+    height: 25px;
+    text-align:center;
+    font-size: 25px;
+    color: rgb(235, 173, 4);
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: -10px;
+    margin-left: -10px;
+    z-index: 2;
+}
+.player1characterportraitoutline {
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(150, 30, 30);
+    border-left: none;
+    border-bottom: none;
+    border-bottom-right-radius: 0px;
+    height: 300px;
+    margin-top: -370px;
+    margin-right: 10px;
+    border-top-right-radius: 30px;
+}
+.player1characterportraitinner {
+    position: relative;
+    clip-path: polygon(40% 6%, 50% 0, 100% 0, 100% 100%, 0 100%, 0 6%);
+    background-color:rgb(95, 20, 20);
+    width: 216px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-top-right-radius: 15px;
+    overflow:visible;
+}
+.characternamecontainer {
+    position: relative;
+    border-style: solid;
+    border-color:#444647;
+    border-width: 3px;
+    border-radius: 15px;
+    height: 85px;
+    margin-right: 5px;
+    margin-top: -5px;
+    background-color: rgba(0, 0, 0, 0.445);
+    z-index: 1;
+}
+.characternameboxupper {
+    position: relative;
+    border-style: solid;
+    border-color:#7c8184;
+    height: 30px;
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -12px;
+    background-color: rgba(0, 0, 0, 0.76);
+    z-index: 2;
+}
+.characternameboxlower {
+    position: relative;
+    border-style:solid;
+    border-color:#444647;
+    border-radius:1px;
+    background-color: rgba(1, 0, 17, 0.829);
+    width: 95%;
+    height: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15px;
+}
+#characterpicture {
+    position: relative;
+    height: 348px;
+    width: 252px;
+    z-index: 1;
 }
