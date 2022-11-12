@@ -22,7 +22,8 @@ body {
     width: 100%;
     margin: 0;
     height: 100%;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 * {
@@ -33,7 +34,10 @@ body {
     background-color: rgb(75, 9, 9);
 }
 
-
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
 .characterlink {
     color: #7c8184;
     text-decoration: none;
@@ -134,7 +138,10 @@ body {
     right: 50px;
     word-spacing: 150%;
 }
-
+.main {
+    margin:auto;
+    text-align: center;
+}
 #info {
     color: #f1e11a;
     border-color: #f1e11a;
@@ -145,6 +152,10 @@ body {
     top: 70px;
     font-size: 25px;
     text-decoration: none;
+}
+
+ul {
+    margin: 0%;
 }
 
 li {
@@ -180,8 +191,7 @@ li {
 
 .all-characters {
     width: 100%;
-    margin: auto;
-    bottom: 25px;
+    margin-top: 20px;
 }
 
 .characters {
@@ -190,11 +200,12 @@ li {
 }
 
 .ch2 {  
-    bottom: 17px;
+    bottom: 2px;
 }
 
 .ch3 {
-    bottom: 33px;
+    bottom: 2px;
+    margin-bottom: 20px;
 }
 .player1characterportrait1 {
     background-color: rgb(230, 61, 61);
@@ -262,7 +273,7 @@ li {
     border-style: solid;
     border-color:#7c8184;
     height: 30px;
-    width: 140px;
+    width: 180px;
     margin-left: auto;
     margin-right: auto;
     margin-top: -12px;
@@ -286,4 +297,65 @@ li {
     height: 348px;
     width: 252px;
     z-index: 1;
+}
+#charactername {
+    text-align: center;
+    font-size: large;
+    margin-top: 6px;
+    font-weight: bold;
+    color: #cdd1d4;
+}
+#readybanner {
+    display: none;
+    position: relative;
+    margin-top: -650px;
+    z-index: 3;
+}
+.readytofight {
+    height:95px;
+    border-top: 15px solid rgba(218, 21, 21, 0.842);
+    border-bottom: 15px solid rgba(218, 21, 21, 0.842);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+#readytoFightText {
+    margin: 0px;
+    font-size: 80px;
+    word-spacing: 20px;
+    letter-spacing: 5px;
+    color: rgb(235, 173, 4);
+}
+/* .readytofight::after {
+    content: '';
+    display: inline-block;
+    width:100%;
+    height: 20px;
+    border-top: 30px solid rgba(218, 21, 21, 0.842);
+    border-top-left-radius: 90%;
+    border-top-right-radius: 90%;
+    height: 50px;
+} */
+.pressStart {
+    width: 800px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    clip-path: polygon(0 0, 100% 0, 80% 85%, 20% 85%);
+    /* margin-top: -1px; */
+    border-top-left-radius: 90%;
+    border-top-right-radius: 90%;
+}
+.pressStart p {
+    text-align: center;
+    background-color: rgba(218, 21, 21, 0.842);
+    margin: 0px;
+    font-size: larger;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    color: rgb(255, 177, 177);
+}
+#P1 {
+    font-family: Hussar;
+    font-weight: bold;
+    font-size: 30px;
 }
